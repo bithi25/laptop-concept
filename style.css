@@ -1,0 +1,467 @@
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .hero {
+    height: 100vh;
+    background: url('https://velvetescape.com/wp-content/uploads/2011/11/dawid-zawila-G3rw6Y02D0-unsplash.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    font-size: 1rem;
+    background-color: #ff6200;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #e55a00;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    .cta-button {
+      font-size: 0.9rem;
+      padding: 12px 24px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 0.9rem;
+    }
+  
+    .cta-button {
+      font-size: 0.8rem;
+      padding: 10px 20px;
+    }
+  }
+  
+
+
+  .why-choose-us {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .benefits {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+  }
+  
+  .benefit {
+    text-align: center;
+    max-width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .benefit:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .benefit img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .benefit h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+  
+  .benefit p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .testimonials {
+    margin-top: 40px;
+  }
+  
+  .testimonials blockquote {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonials blockquote footer {
+    font-weight: bold;
+    color: #333;
+    text-align: right;
+  }
+  
+  @media (max-width: 768px) {
+    .benefits {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .benefit {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 2rem;
+    }
+  
+    .benefit h3 {
+      font-size: 1.4rem;
+    }
+  
+    .benefit p {
+      font-size: 0.9rem;
+    }
+  }
+
+
+
+  about-us {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .text {
+    max-width: 600px;
+    font-size: 1.1rem;
+    color: #444;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .text p {
+    margin-bottom: 20px;
+  }
+  
+  .text:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .image {
+    max-width: 500px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .image:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .image img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .text {
+      max-width: 100%;
+      font-size: 1rem;
+    }
+  
+    .image img {
+      max-width: 80%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 2rem;
+    }
+  
+    .text p {
+      font-size: 0.9rem;
+    }
+  }
+
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* General styling for all CTA buttons */
+  
+  
+  .cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Product Showcase Section */
+  .product-showcase {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .product-showcase h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .product {
+    max-width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .product:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  .product h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+  
+  /* Testimonials Section */
+  .testimonials {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .testimonial {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .testimonial blockquote {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .testimonial footer {
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  /* Pricing Section */
+  .pricing {
+    background-color: #175153;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .pricing h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #f0f0f0;
+  }
+  
+  .pricing-plans {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .pricing-plan {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    max-width: 300px;
+  }
+  
+  .pricing-plan:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .pricing-plan h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .pricing-plan p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  /* FAQ Section */
+  .faq {
+    background-color: #fff;
+    padding: 60px 20px;
+  }
+  
+  .faq h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .faq-item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .faq-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  /* CTA Section */
+  .cta {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .cta p {
+    font-size: 1.1rem;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .products {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .pricing-plans {
+      flex-direction: column;
+    }
+  }
+
